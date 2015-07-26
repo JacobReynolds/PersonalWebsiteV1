@@ -6,7 +6,7 @@ angular.module('routeApp').directive('lifeDirective', function () {
     return {
         restrict: 'E',
         controller: 'aboutCtrl',
-        templateUrl: '../html/lifeDirective.html'
+        templateUrl: 'about/lifeDirective.html'
     };
 
 });

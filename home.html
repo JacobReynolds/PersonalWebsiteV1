@@ -1,21 +1,17 @@
 <!DOCTYPE HTML>
+<!--
+Thanks for checking the source!
 
+The full source can be viewed on my github.
+
+For the best easter egg experience: view in Chrome.
+-->
 <meta name="viewport" content="initial-scale=0.5, user-scalable=yes">
 <html class="mainPage {{currentClass}}" id="mainPage" ng-app="routeApp" ng-controller="mainCtrl" ng-swipe-right="setPrevActive()" ng-swipe-left="setNextActive()">
 
 <body>
 
     <head>
-        <!--May look into using grunt to compile imports-->
-        <!--Angular dependencies-->
-        <script src="js/angular/angular.js"></script>
-        <script src="js/angular/angular-route.js"></script>
-        <script src="js/angular/angular-animate.js"></script>
-        <script src="js/angular/angular-touch.js"></script>
-        <script src="js/angular/angular-sanitize.js"></script>
-        <!--Jquery import
-        May pull this into local files-->
-        <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
         <!--Font imports-->
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
@@ -23,14 +19,7 @@
         <link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!--Css imports are done in their respective views-->
-        <link href='style/home.css' rel='stylesheet' type='text/css'></link>
-        <!--Controller imports-->
-        <script src="js/github.js"></script>
-        <script src="js/routeApp.js"></script>
-        <script src="js/Controllers/projects.controller.js"></script>
-        <script src="js/Controllers/about.controller.js"></script>
-        <script src="js/Controllers/main.controller.js"></script>
-        <script src="js/Directives/life.directive.js"></script>
+        <link href='home/home.css' rel='stylesheet' type='text/css'></link>
         <!--Favicon
         Need to add support for Firefox-->
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
@@ -63,5 +52,23 @@
     </div>
 
 </body>
+<!--Scripts at bottom to prevent white page flicker in IE
+when http request is made on page load-->
+<!--Jquery import, may pull this into local files-->
+<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<!--May look into using grunt to compile imports-->
+<!--Angular dependencies-->
+<script src="imports/angular/angular.js"></script>
+<script src="imports/angular/angular-route.js"></script>
+<script src="imports/angular/angular-animate.js"></script>
+<script src="imports/angular/angular-touch.js"></script>
+<script src="imports/angular/angular-sanitize.js"></script>
+<!--Controller imports-->
+<script src="home/github.js"></script>
+<script src="home/routeApp.js"></script>
+<script src="projects/projects.controller.js"></script>
+<script src="about/about.controller.js"></script>
+<script src="main/main.controller.js"></script>
+<script src="about/life.directive.js"></script>
 
 </html>

@@ -7,19 +7,19 @@ app.config(function ($routeProvider) {
     "use strict";
     $routeProvider
         .when('/', {
-            templateUrl: '../html/main.html',
+            templateUrl: '../main/main.html',
             controller: 'mainCtrl'
         })
         .when('/about', {
-            templateUrl: '../html/about.html',
+            templateUrl: '../about/about.html',
             controller: 'aboutCtrl'
         })
         .when('/projects', {
-            templateUrl: '../html/projects.html',
+            templateUrl: '../projects/projects.html',
             controller: 'projectsCtrl'
         })
         .otherwise('/', {
-            templateUrl: '../html/main.html',
+            templateUrl: '../main/main.html',
             controller: 'mainCtrl'
         });
 
