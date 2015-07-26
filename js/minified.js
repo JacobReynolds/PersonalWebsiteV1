@@ -370,7 +370,7 @@ angular.module('routeApp').controller("mainCtrl", function ($scope, $location, $
             }
             // setTimeout($scope.stopStars = false, 1000);
             //$scope.stopStars = true;
-        }, 500);
+        }, 1000);
         $scope.stopStars = false;
     };
 
