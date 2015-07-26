@@ -41,9 +41,6 @@ For the best easter egg experience: view in Chrome.
             <a href="https://www.github.com/JacobReynolds" target="_blank">Github</a> |
             <a href="https://www.linkedin.com/pub/jacob-reynolds/91/5b0/93" target="_blank">LinkedIn</a>
         </div>
-        <div id="clouds">
-
-        </div>
     </header>
     <div>
         <div ng-view id="mainView" ng-class="currentPage"></div>
@@ -52,23 +49,10 @@ For the best easter egg experience: view in Chrome.
     </div>
 
 </body>
-<!--Scripts at bottom to prevent white page flicker in IE
-when http request is made on page load-->
-<!--Jquery import, may pull this into local files-->
-<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
-<!--May look into using grunt to compile imports-->
-<!--Angular dependencies-->
-<script src="imports/angular/angular.js"></script>
-<script src="imports/angular/angular-route.js"></script>
-<script src="imports/angular/angular-animate.js"></script>
-<script src="imports/angular/angular-touch.js"></script>
-<script src="imports/angular/angular-sanitize.js"></script>
-<!--Controller imports-->
-<script src="home/github.js"></script>
-<script src="home/routeApp.js"></script>
-<script src="projects/projects.controller.js"></script>
-<script src="about/about.controller.js"></script>
-<script src="main/main.controller.js"></script>
-<script src="about/life.directive.js"></script>
+
+<!--Concat Angular dependencies-->
+<script src="js/libraries.js"></script>
+<!--Concat Controller imports-->
+<script src="js/minified.js"></script>
 
 </html>

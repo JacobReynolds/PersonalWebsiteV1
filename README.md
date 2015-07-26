@@ -3,8 +3,8 @@ This is my personal website.  From learning javascript to this first release in 
 Please email reyno511@umn.edu with any questions, comments, or concerns.
 #Design Decisions
 <h3>Task runners</h3>
-I decided not to use Grunt because although it would provide a better http
-response from the server,<br> there doesn't seem to be enough benefit to add the boilerplate to this project.
+After looking at the page load time I decided to use grunt to concat all javascript files, and libraries.<br>
+Now on page load only two files are loaded.  Although bigger, since http allows parallel requests, hopefully it isn't as much of an issue.
 <h3>Classes and ID's</h3>
 In the HTML I use a mix of classes and id's.  I tried to use id's for individual elements with more than 2 style attributes.<br>
 Classes were used for elements that would be used more than once.

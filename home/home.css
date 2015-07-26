@@ -11,6 +11,18 @@
 #mainView {
     position: absolute;
 }
+/*Visible picture made into a circle*/
+
+#pictureCircle {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    background: url(/images/mainPicture.jpg);
+    background-size: cover;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
 
 .Bg-add,
 .Bg-remove,
@@ -19,7 +31,7 @@
 .projectsBg-add,
 .projectsBg-remove {
     -webkit-transition: all 1000ms ease;
-            transition: all 1000ms ease;
+    transition: all 1000ms ease;
 }
 
 .Bg,
@@ -42,25 +54,6 @@
     height: 0
 }
 
-#clouds {
-    width: 100%;
-    height: 233px;
-    top: 0;
-    left: 0;
-    background-image: url(http://www.paguecomumtweet.com.br/img/bg-clouds.png);
-    background-position: 0px 0px;
-    background-repeat: repeat-x;
-    position: fixed;
-    z-index: -1;
-    -webkit-animation: animatedBackground 40s linear infinite;
-            animation: animatedBackground 40s linear infinite;
-    -webkit-transition: opacity .5s ease;
-            transition: opacity .5s ease;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    background-size: cover;
-}
-
 @-webkit-keyframes animatedBackground {
     from {
         background-position: 0 0;
@@ -78,8 +71,8 @@
         background-position: 100% 0;
     }
 }
-
 /*Right-side tab, used for toggling routes*/
+
 #Next {
     right: -10px;
     position: absolute;
@@ -99,8 +92,8 @@
     -webkit-transition: right 0.2s ease;
     transition: right 0.2s ease
 }
-
 /*Left-side tab, used for toggling routes*/
+
 #Previous {
     left: -10px;
     top: 40%;
@@ -120,8 +113,8 @@
     -webkit-transition: left 0.2s ease;
     transition: left 0.2s ease
 }
-
 /*Hide tabs on mobile, since swipe is enabled*/
+
 @media screen and (max-width: 1000px) {
     #Next {
         display: none;
@@ -130,8 +123,8 @@
         display: none;
     }
 }
-
 /*Expand tabs on hover*/
+
 #Previous:hover {
     left: 0
 }
@@ -164,20 +157,8 @@ p {
     color: #A2482E;
     font-family: 'Cedarville Cursive', cursive;
 }
-
-/*Visible picture made into a circle*/
-#pictureCircle {
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    border-radius: 50%;
-    background: url(/images/mainPicture.jpg);
-    background-size: cover;
-    -webkit-transition: all 0.5s ease-in-out;
-            transition: all 0.5s ease-in-out;
-}
-
 /*Invisible picture overlay*/
+
 #pictureOverlay {
     text-align: center;
     vertical-align: middle;
@@ -192,26 +173,21 @@ p {
     -webkit-transition: opacity 0.5s ease;
     transition: all 0.5s ease-in-out;
 }
-
 /*One circle hover make the overlay visible, displaying text*/
+
 #pictureCircle:hover #pictureOverlay {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 100;
     filter: alpha(opacity=10000);
     -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
-
 /*Make the circle dim*/
+
 #pictureCircle:hover {
     box-shadow: inset 0px 0px 224px -63px #111111;
-}
-
-#pictureCircle:hover ~ #clouds {
-    opacity: 1;
-    filter: alpha(opacity=100);
 }
 
 #pictureText {
@@ -228,16 +204,16 @@ p {
 #contact {
     text-align: center;
 }
-
 /*This is the ng-view*/
+
 .leftPage,
 .rightPage {
     position: absolute;
     width: 100%;
     z-index: -2;
 }
-
 /*Give them animations for left and right sides*/
+
 .leftPage.ng-enter,
 .leftPage.ng-leave,
 .rightPage.ng-enter,
@@ -289,12 +265,12 @@ p {
 
 #header.ng-hide-add {
     -webkit-animation: 1s fadeOut ease;
-            animation: 1s fadeOut ease;
+    animation: 1s fadeOut ease;
 }
 
 #header.ng-hide-remove {
     -webkit-animation: 1s fadeIn ease;
-            animation: 1s fadeIn ease;
+    animation: 1s fadeIn ease;
 }
 
 @-webkit-keyframes {
