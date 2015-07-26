@@ -1,0 +1,42 @@
+#main {
+    width: 50%;
+    color: #8A3D33;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 275px;
+    border: 3px;
+    border-radius: 10px/50%;
+    padding: 10px;
+    background: #3C3329;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+/*Make the page wider so it's easier to read on mobile*/
+@media screen and (max-width: 1000px) {
+    #main {
+        width: 75%;
+    }
+}
+
+small {
+    color: #696969;
+}
+
+#main h1 {
+    text-align: center;
+    font-family: 'Sansita One', cursive;
+    color: #fff;
+    font-size: 40px;
+    line-height: 10px;
+}
+
+#main p {
+    text-align: left;
+    color: #fff;
+    font-family: 'Kameron', serif;
+}
+
+#main h3 {
+    text-align: center;
+}

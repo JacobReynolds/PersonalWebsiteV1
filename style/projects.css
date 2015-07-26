@@ -1,0 +1,23 @@
+#projects {
+    width: 35%;
+    margin: auto;
+    border: 3px;
+    border-radius: 10px/50%;
+    padding: 15px;
+}
+
+#projectsHeader {
+    width: 30%;
+    margin: auto;
+}
+
+#projects a {
+    color: #000;
+}
+
+/*Make the page wider so it's easier to read on mobile*/
+@media screen and (max-width: 1000px) {
+    #projects {
+        width: 75%;
+    }
+}

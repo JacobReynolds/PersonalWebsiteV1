@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<meta name="viewport" content="initial-scale=0.5, user-scalable=yes">
+<html class="mainPage {{currentClass}}" id="mainPage" ng-app="routeApp" ng-controller="mainCtrl" ng-swipe-right="setPrevActive()" ng-swipe-left="setNextActive()">
+
+<body>
+
+    <head>
+        <!--May look into using grunt to compile imports-->
+        <!--Angular dependencies-->
+        <script src="js/angular/angular.js"></script>
+        <script src="js/angular/angular-route.js"></script>
+        <script src="js/angular/angular-animate.js"></script>
+        <script src="js/angular/angular-touch.js"></script>
+        <script src="js/angular/angular-sanitize.js"></script>
+        <!--Jquery import
+        May pull this into local files-->
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <!--Font imports-->
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Snowburst+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!--Css imports are done in their respective views-->
+        <link href='style/home.css' rel='stylesheet' type='text/css'></link>
+        <!--Controller imports-->
+        <script src="js/github.js"></script>
+        <script src="js/routeApp.js"></script>
+        <script src="js/Controllers/projects.controller.js"></script>
+        <script src="js/Controllers/about.controller.js"></script>
+        <script src="js/Controllers/main.controller.js"></script>
+        <script src="js/Directives/life.directive.js"></script>
+        <!--Favicon
+        Need to add support for Firefox-->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <title>
+            Jake Reynolds
+        </title>
+    </head>
+    <header id="header">
+        <h1 id="name">
+            Jacob Reynolds
+        </h1>
+        <div id="pictureCircle">
+            <div ng-mouseenter="starFall();" ng-mouseleave="starStop();" id="pictureOverlay">
+                <span id="pictureText">Let it snow</span>
+            </div>
+        </div>
+        <div id="contact">
+            <a href="mailto:reyno511@umn.edu" target="_blank">Contact Me</a> |
+            <a href="https://www.github.com/JacobReynolds" target="_blank">Github</a> |
+            <a href="https://www.linkedin.com/pub/jacob-reynolds/91/5b0/93" target="_blank">LinkedIn</a>
+        </div>
+        <div id="clouds">
+
+        </div>
+    </header>
+    <div>
+        <div ng-view id="mainView" ng-class="currentPage"></div>
+        <div ng-mouseover="setPrevActive()" id="Previous"></div>
+        <div ng-mouseover="setNextActive()" id="Next"></div>
+    </div>
+
+</body>
+
+</html>
