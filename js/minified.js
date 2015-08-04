@@ -7,7 +7,7 @@ app.config(function ($routeProvider) {
     "use strict";
     $routeProvider
         .when('/', {
-            templateUrl: 'MyAngularWebsite/main/index.html',
+            templateUrl: 'main/index.html',
             controller: 'mainCtrl'
         })
         .when('/about', {
