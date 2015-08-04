@@ -338,7 +338,7 @@ angular.module('routeApp').controller("mainCtrl", function ($scope, $location, $
             elem.style.position = 'absolute';
             elem.style.zIndex = getRandomArbitrary(-4, -1);
             elem.id = 'star';
-
+ 
             //Set random animation characteristics
             //Propulsion is vertical speed
             //Thrust is horizontal speed
