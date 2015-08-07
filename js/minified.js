@@ -1,7 +1,7 @@
 /*jslint browser: true*/
 /*jslint vars: true*/
 /*global  $, angular*/
-
+    
 var app = angular.module('routeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ngTouch']);
 app.config(function ($routeProvider) {
     "use strict";
